@@ -73,6 +73,10 @@
     </Content>
     <Content Include="Home.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="Properties\coffees.png" />
+    <Content Include="Properties\coffee_wall.jpg" />
+    <Content Include="Properties\latte.png" />
+    <Content Include="Properties\pastries.png" />
     <Content Include="SignUp.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
