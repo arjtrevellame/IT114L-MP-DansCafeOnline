@@ -37,7 +37,8 @@ namespace Dans_Cafe
                     ClearValues();
 
                     Response.Write("<script>alert('You are now registered!');</script>");
-                    Response.Write("<script>window.setTimeout(function(){ window.location.href = 'login.aspx'; }, 1000);</script>");
+                    Response.Redirect("Login.aspx");
+                    //Response.Write("<script>window.setTimeout(function(){ window.location.href = 'login.aspx'; }, 1000);</script>");
                 }
                 else
                 {

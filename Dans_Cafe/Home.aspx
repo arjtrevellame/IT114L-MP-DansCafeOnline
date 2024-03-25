@@ -11,9 +11,9 @@
     <style>
         body {
             background-image: url(Properties/coffee_wall.jpg);
-            background-size: 1600px;
+            background-size: 100%;
             background-position: top;
-            height: 1600px;
+            height: 50%;
             background-repeat: no-repeat;
         }
 
@@ -41,12 +41,17 @@
 
         .grid-container {
             display: inline-grid;
+            /*background-color: coral;*/
             grid-template-columns: auto auto;
             padding: 10px;
             margin-top: 500px;
             gap: 100px;
-            margin-left: 200px;
-            margin-bottom: 100px;
+            margin-left: 13%;
+            /*margin-right: 10%;*/
+            /*margin-left: auto;*/
+            /*margin-right: auto;*/
+            margin-bottom: 8%;
+            
         }
 
         .square {
