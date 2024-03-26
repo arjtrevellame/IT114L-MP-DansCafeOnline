@@ -48,7 +48,7 @@
     #signup_button {
         width: 100%;
         padding: 10px;
-        background-color: #4B3621;
+        background-color: #2E1308;
         color: #fff;
         border: none;
         border-radius: 3px;
@@ -59,16 +59,17 @@
     }
     
     #signup_button:hover {
-        background-color: #9F8170;
+        background-color: #4B3621;
     }
     input[type="text"],
-    input[type="password"] {
+    input[type="password"]{
         width: 100%;
         padding: 10px;
         border: 1px solid #ccc;
         border-radius: 5px;
         margin-bottom: 10px;
         font-size:medium;
+        box-sizing: border-box;
     }
 </style>
 </head>

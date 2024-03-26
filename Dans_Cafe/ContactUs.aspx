@@ -57,7 +57,7 @@ body {
 }
 
 .card {
-    width: 200px;
+    width: 250px;
     margin: 0 20px;
     padding: 20px;
     border-radius: 10px;
@@ -74,7 +74,7 @@ body {
     .card .icon {
         font-size: 35px;
         margin-bottom: 10px;
-        color: #2E1308
+        color: #2E1308;
     }
 
     .card h4 {
@@ -83,29 +83,42 @@ body {
         color: #333;
     }
 
-    .card button {
-        background-color: #C8AD7F;
+    .card .btn{
+        background-color: #2E1308;
         color: #fff;
         border: none;
-        padding: 15px 30px;
+        padding: 10px 40px;
         border-radius: 8px;
         cursor: pointer;
         transition: background-color 0.3s ease;
         font-size: 20px;
     }
 
-        .card button:hover {
-            background-color: #0056b3;
+        .card .btn:hover {
+            background-color: #B19470;
         }
 
-
+        @media only screen and (max-width: 768px) {
+            .contactUs {
+                flex-direction: column;
+            }
+            
+            .card {
+                width: 250px;
+                margin: 0 20px 20px 20px;
+            }
+            .msg{
+                padding-right:20px;
+                padding-left:20px;
+            }
+        }
 
     </style>
 
     <div class="contact-section">
         <div class="title">
             <h2>Contact Us</h2>
-            <p>Have any questions or feedback?
+            <p class="msg" >Have any questions or feedback?
                Reach out to us here! Our dedicated team is ready to assist you with any inquiries, 
                support requests, or suggestions you may have. Your satisfaction is our priority, 
                and we're committed to providing you with the best experience possible. Feel free to 
@@ -118,21 +131,21 @@ body {
                         <i class="fa-brands fa-square-facebook"></i>
                         </div>
                     <h4>Facebook</h4>
-                    <asp:Button runat="server" Text="Visit" OnClientClick="window.location.href='https://www.facebook.com/'; return false;"/>
+                    <asp:Button class="btn" runat="server" Text="Visit" OnClientClick="window.location.href='https://www.facebook.com/'; return false;"/>
                 </div>
                 <div class="card">
                     <div class="icon">
                         <i class="fa-brands fa-square-instagram"></i>
                     </div>
                     <h4>Instagram</h4>
-                    <asp:Button runat="server" Text="Visit" OnClientClick="window.location.href='https://www.instagram.com/'; return false;"/>
+                    <asp:Button class="btn" runat="server" Text="Visit" OnClientClick="window.location.href='https://www.instagram.com/'; return false;"/>
                 </div>
                 <div class="card">
                     <div class="icon">
                         <i class="fa-brands fa-tiktok"></i>
                     </div>
                     <h4>TikTok</h4>
-                    <asp:Button runat="server" Text="Visit" OnClientClick="window.location.href='https://www.tiktok.com/@dans.cafe'; return false;"/>
+                    <asp:Button class="btn" runat="server" Text="Visit" OnClientClick="window.location.href='https://www.tiktok.com/@dans.cafe'; return false;"/>
                 </div>
             </div>
         </form>

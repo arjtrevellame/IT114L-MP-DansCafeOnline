@@ -35,8 +35,8 @@
         input[type="text"],
         input[type="password"],
         textarea {
-            width: calc(100% - 16px);
-            padding: 8px;
+            width: 100%;
+            padding: 10px;
             margin-bottom: 15px;
             border: 1px solid #ccc;
             border-radius: 4px;
@@ -50,7 +50,7 @@
         }
 
         .btn{
-            background-color: #76453B;
+            background-color: #2E1308;
             color: white;
             border: none;
             cursor: pointer;
@@ -61,10 +61,11 @@
             display:flex;
             justify-content:center;
             align-content:center;
+
         }
 
         .btn:hover, .btn:focus, .btn:active{
-            background-color: #B19470;
+            background-color:  #4B3621;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
             -webkit-transform: scale(1.02);
             transform:scale(1.02);
