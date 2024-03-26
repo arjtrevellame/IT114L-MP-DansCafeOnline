@@ -71,6 +71,7 @@
     <Content Include="App_Data\UserSchema_log.ldf">
       <DependentUpon>UserSchema.mdf</DependentUpon>
     </Content>
+    <Content Include="ContactUs.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Properties\coffees.png" />
@@ -83,6 +84,13 @@
   <ItemGroup>
     <Compile Include="App\Users\RepositoryUsers.cs" />
     <Compile Include="App\Users\User.cs" />
+    <Compile Include="ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
