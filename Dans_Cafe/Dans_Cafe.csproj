@@ -79,6 +79,7 @@
     <Content Include="Properties\latte.png" />
     <Content Include="Properties\pastries.png" />
     <Content Include="SignUp.aspx" />
+    <Content Include="CreateStaff.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -112,6 +113,13 @@
     </Compile>
     <Compile Include="SignUp.aspx.designer.cs">
       <DependentUpon>SignUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateStaff.aspx.cs">
+      <DependentUpon>CreateStaff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateStaff.aspx.designer.cs">
+      <DependentUpon>CreateStaff.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
