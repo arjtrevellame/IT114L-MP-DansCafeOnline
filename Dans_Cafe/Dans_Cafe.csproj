@@ -81,6 +81,7 @@
     <Content Include="Properties\pastries.png" />
     <Content Include="SignUp.aspx" />
     <Content Include="CreateStaff.aspx" />
+    <Content Include="StaffView.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -128,6 +129,13 @@
     </Compile>
     <Compile Include="CreateStaff.aspx.designer.cs">
       <DependentUpon>CreateStaff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StaffView.aspx.cs">
+      <DependentUpon>StaffView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StaffView.aspx.designer.cs">
+      <DependentUpon>StaffView.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

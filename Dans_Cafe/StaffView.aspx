@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AdminView.aspx.cs" Inherits="Dans_Cafe.AdminView" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="StaffView.aspx.cs" Inherits="Dans_Cafe.StaffView" %>
 
 <!DOCTYPE html>
 
@@ -6,7 +6,7 @@
 <head runat="server">
     <%--links--%>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
-    <title>Admin Dashboard</title>
+    <title>Staff Dashboard</title>
 </head>
 <body>
         <style>
@@ -25,7 +25,7 @@
             overflow-x: hidden;
         }
 
-        .admin-dashboard {
+        .staff-dashboard {
             text-align: center;
             padding: 50px 0;
         }
@@ -39,7 +39,7 @@
             font-size: 42px;
             color: #333;
         }
-        .adminDashboard {
+        .staffDashboard {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -47,7 +47,7 @@
         }
 
         .card {
-            width: 250px;
+            width: 265px;
             margin: 0 20px;
             padding: 20px;
             border-radius: 10px;
@@ -89,12 +89,12 @@
         }
 
         @media only screen and (max-width: 768px) {
-            .adminDashboard {
+            .staffDashboard {
                 flex-direction: column;
             }
 
             .card {
-                width: 250px;
+                width: 265px;
                 margin: 0 20px 20px 20px;
             }
 
@@ -102,35 +102,25 @@
 
     </style>
 
-    <div class="admin-dashboard">
+    <div class="staff-dashboard">
         <div class="title">
-            <h2>Admin Dashboard</h2>
+            <h2>Staff Dashboard</h2>
         </div>
         <form id="form1" runat="server">
-            <div class="adminDashboard">
+            <div class="staffDashboard">
                 <div class="card">
                     <div class="icon">
-                        <i class="fa-solid fa-user-plus"></i>
-                        </div>
-                    <h4>Create Staff</h4>
-                    <p>add new staff member</p><br />
-                    <asp:Button class="btn" runat="server" Text="Add Staff" OnClick="CreateStaff_Click"/>
+                        <i class="fa-solid fa-mug-hot"></i>
+                    </div>
+                    <h4>Manage Product</h4><br />
+                    <asp:Button class="btn" runat="server" Text="Manage Product"/>
                 </div>
                 <div class="card">
                     <div class="icon">
-                        <i class="fa-solid fa-user-minus"></i>
+                        <i class="fa-solid fa-basket-shopping"></i>
                     </div>
-                    <h4>Manage Staff</h4>
-                    <p>remove staff member</p><br />
-                    <asp:Button class="btn" runat="server" Text="Manage Staff"/>
-                </div>
-                <div class="card">
-                    <div class="icon">
-                        <i class="fa-solid fa-chart-line"></i>
-                    </div>
-                    <h4>Sales Report</h4>
-                    <p>view sales performance</p><br />
-                    <asp:Button class="btn" runat="server" Text="View"/>
+                    <h4>Manage Order</h4><br />
+                    <asp:Button class="btn" runat="server" Text="Manage Order"/>
                 </div>
             </div>
         </form>
