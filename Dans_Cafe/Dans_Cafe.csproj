@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdminView.aspx" />
     <Content Include="App_Data\UserSchema.mdf" />
     <Content Include="App_Data\UserSchema_log.ldf">
       <DependentUpon>UserSchema.mdf</DependentUpon>
@@ -83,6 +84,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminView.aspx.cs">
+      <DependentUpon>AdminView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminView.aspx.designer.cs">
+      <DependentUpon>AdminView.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App\Users\RepositoryUsers.cs" />
     <Compile Include="App\Users\User.cs" />
     <Compile Include="ContactUs.aspx.cs">
